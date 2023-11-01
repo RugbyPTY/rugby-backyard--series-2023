@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 import Menu from "./components/Menu";
-import { Parallax, WithBackground } from "./components/Parallax";
+import {WithBackground } from "./components/Parallax";
 import Countdown from "./components/Countdown";
 
 function App() {
