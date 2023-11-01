@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react';
 import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 import isologo from "../../assets/isologo.svg";
 import isotipo from "../../assets/isotipo.svg";
@@ -15,12 +15,12 @@ const MENU_ENTRIES = [
   {
     label: "REGLAS",
   },
-  {
-    label: "PATROCINADORES",
-  },
-  {
-    label: "FAQS",
-  },
+  // {
+  //   label: "PATROCINADORES",
+  // },
+  // {
+  //   label: "FAQS",
+  // },
 ];
 
 interface MobileMenuProps {

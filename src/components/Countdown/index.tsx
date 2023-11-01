@@ -22,7 +22,8 @@ function Countdown({ date }: Props) {
   });
 
   const calculateCountdown = useCallback((endDate: string) => {
-    let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
+    const now = Date.now();
+    let diff = (Date.parse(endDate) - now) / 1000;
 
     // clear countdown when date is reached
     if (diff <= 0) return false;
@@ -55,7 +56,7 @@ function Countdown({ date }: Props) {
       timeLeft.min = Math.floor(diff / 60);
       diff -= timeLeft.min * 60;
     }
-    timeLeft.sec = diff;
+    timeLeft.sec = Math.round(diff);
 
     return timeLeft;
   }, []);

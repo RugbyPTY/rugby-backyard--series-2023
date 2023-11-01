@@ -10,7 +10,7 @@ function App() {
       <Menu />
 
       <main>
-        <Parallax
+        {/* <Parallax
           image="/images/bg/1103840.jpg"
           color="bg-main"
           className="h-[50vh] md:h-[80vh] container mx-auto px-4 flex items-center justify-center"
@@ -63,7 +63,7 @@ function App() {
               </div>
             </div>
           </div>
-        </Parallax>
+        </Parallax> */}
         <section className="relative">
           <div
             className={clsx(
@@ -126,7 +126,7 @@ function App() {
         <section className="bg-accent py-10">
           <div className="container mx-auto">
             <div className="flex justify-center">
-              <Countdown date="2024-01-06T00:00:00" />
+              <Countdown date="2023-12-16T00:00:00" />
             </div>
           </div>
         </section>
@@ -149,7 +149,7 @@ function App() {
                   valiente para enfrentar a los mejores y demostrar que eres el
                   campeón indiscutible, ¡entonces no esperes más! Inscríbete
                   ahora y prepárate para la batalla en el evento de{" "}
-                  <strong className="text-accent">rugby uno vs uno</strong> que
+                  <strong className="text-accent">rugby Backyard</strong> que
                   definirá al verdadero rey del campo. ¿Aceptas el desafío?
                 </p>
               </div>
@@ -162,388 +162,195 @@ function App() {
             </div>
           </div>
         </WithBackground>
-
-        <WithBackground
-          image="/images/bg/field.jpg"
-          color="bg-accent"
-          className="py-14 text-white"
+        <section
+          className={clsx(
+            "relative w-full pt-16 pb-8 ",
+            "py-14 text-white",
+            "bg-[url('/images/bg/field.jpg')] bg-center bg-cover before:bg-accent",
+            "before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-90"
+          )}
         >
-          <div className="container mx-auto">
-            <h2 className="uppercase text-3xl relative pb-1 mb-14 inline-block pl-3 font-bold after:content-[''] after:bg-three after:w-2 after:h-full after:absolute after:top-0 after:left-0">
-              <span className="text-three">Cam</span>po
-            </h2>
-            <div className="grid md:grid-cols-2 items-center md:gap-4 gap-8 font-[sans-serif] max-w-5xl max-md:max-w-md mx-auto">
-              <div className="md:h-[320px] md:hidden lg:block">
-                <img
-                  src="./images/field1x1.svg"
-                  className="w-full h-full md:object-contain "
-                />
-              </div>
-              <div className="max-md:order-1 max-md:text-center p-2">
-                <p className="mt-4 text-sm md:text-lg text-justify">
-                  En el corazón de un campo de{" "}
-                  <span className="text-three">6x3 metros</span>, flanqueado por
-                  áreas de anotación de 1 metro a cada lado, te espera. En el
-                  centro del campo, el <span className="text-three">balón</span>{" "}
-                  reposa a un metro del centro, en posesión del atacante,
-                  desafiante. El defensor se encuentra en su zona de resguardo,
-                  mirandolo fijamente.
-                </p>
-                <p className="mt-4 text-sm md:text-lg text-justify">
-                  Un silencio tenso cobra vida en el aire, la multitud
-                  expectante espera con ansias. El árbitro, el guardián de la
-                  justicia, da la señal de inicio con un pitido que rompe la
-                  calma, la acción se desata. Los jugadores se lanzan hacia
-                  adelante con ferocidad, cada uno ansiosos por probar su valía.
-                  Este es el momento en que se forjan los campeones, un metro a
-                  la vez.
-                </p>
+          <div className="relative">
+            <div className="container mx-auto">
+              <h2 className="uppercase text-3xl relative pb-1 mb-14 inline-block pl-3 font-bold after:content-[''] after:bg-three after:w-2 after:h-full after:absolute after:top-0 after:left-0">
+                <span className="text-three">Cam</span>po
+              </h2>
+              <div className="grid md:grid-cols-2 items-center md:gap-4 gap-8 font-[sans-serif] max-w-5xl max-md:max-w-md mx-auto">
+                <div className="md:h-[320px] md:hidden lg:block">
+                  <img
+                    src="./images/field1x1.svg"
+                    className="w-full h-full md:object-contain "
+                  />
+                </div>
+                <div className="max-md:order-1 max-md:text-center p-2">
+                  <p className="mt-4 text-sm md:text-lg text-justify">
+                    En el corazón de un campo de{" "}
+                    <span className="text-three">6x3 metros</span>, flanqueado
+                    por áreas de anotación de 1 metro a cada lado, te espera. En
+                    el centro del campo, el{" "}
+                    <span className="text-three">balón</span> reposa a un metro
+                    del centro, en posesión del atacante, desafiante. El
+                    defensor se encuentra en su zona de resguardo, mirandolo
+                    fijamente.
+                  </p>
+                  <p className="mt-4 text-sm md:text-lg text-justify">
+                    Un silencio tenso cobra vida en el aire, la multitud
+                    expectante espera con ansias. El árbitro, el guardián de la
+                    justicia, da la señal de inicio con un pitido que rompe la
+                    calma, la acción se desata. Los jugadores se lanzan hacia
+                    adelante con ferocidad, cada uno ansiosos por probar su
+                    valía. Este es el momento en que se forjan los campeones, un
+                    metro a la vez.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </WithBackground>
+        </section>
+        <section className="relative">
+          <div
+            className={clsx(
+              "py-14 px-4 text-white",
+              "before:absolute before:content-[''] before:top-0 before:left-0 before:w-full before:h-full",
+              "before:bg-[url('/images/bg/1103850.jpg')]",
+              "before:bg-fixed before:bg-center before:bg-cover",
+              "after:bg-main",
+              "after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:opacity-90 after:z-0"
+            )}
+          >
+            <div className="relative z-[3]">
+              <div className="container mx-auto">
+                <h2 className="uppercase text-3xl relative pb-1 mb-14 inline-block pl-3 font-bold after:content-[''] after:bg-three after:w-2 after:h-full after:absolute after:top-0 after:left-0">
+                  <span className="text-three">Re</span>glas
+                </h2>
+                <div className="grid md:grid-cols-2  md:gap-4 gap-8 font-[sans-serif] max-w-5xl max-md:max-w-md mx-auto">
+                  <div>
+                    <h1 className="mb-2 p-0 m-0 text-three text-xl text-left">
+                      Objetivo del juego
+                    </h1>
+                    <p className="text-sm md:text-lg text-justify">
+                      El objetivo del juego es ganar la mayor cantidad de
+                      puntos; se dispondrán de 4 rondas. El equipo con la mayor
+                      cantidad de puntos al finalizar todas las rondas será
+                      anunciado como ganador. El juego no tendrá empates, se
+                      decidirá por muerte súbita.
+                    </p>
 
-        <Parallax
-          image="/images/bg/1103850.jpg"
-          color="bg-main"
-          className="py-14 px-4 text-white"
-        >
-          <div className="container mx-auto">
-            <h2 className="uppercase text-3xl relative pb-1 mb-14 inline-block pl-3 font-bold after:content-[''] after:bg-three after:w-2 after:h-full after:absolute after:top-0 after:left-0">
-              <span className="text-three">Re</span>glas
-            </h2>
-            <div className="grid md:grid-cols-2  md:gap-4 gap-8 font-[sans-serif] max-w-5xl max-md:max-w-md mx-auto">
-              <div>
-                <h1 className="mb-2 p-0 m-0 text-three text-xl text-left">
-                  Objetivo del juego
-                </h1>
-                <p className="text-sm md:text-lg text-justify">
-                  El objetivo del juego es ganar la mayor cantidad de puntos; se
-                  dispondrán de 4 rondas. El equipo con la mayor cantidad de
-                  puntos al finalizar todas las rondas será anunciado como
-                  ganador.El juego no tendrá empates se decidirá por muerte
-                  súbita.
-                </p>
+                    <h1 className="mt-5 mb-2 p-0 m-0 text-three  text-xl text-left">
+                      Jugadores y Equipo
+                    </h1>
+                    <p className="text-sm md:text-lg text-justify">
+                      Cada equipo constará de 3 jugadores a discresión de las
+                      siguientes combinaciones: femenino, mixto o masculino.
+                    </p>
+                    <p className="text-sm md:text-lg text-justify">
+                      Son permitidos tacos (no metálicos), protector bucal,
+                      scrumcap y shoulder pads. No será necesario uniforme del
+                      mismo color o el uso de medias largas.
+                    </p>
 
-                <h1 className="mt-5 mb-2 p-0 m-0 text-three  text-xl text-left">
-                  Jugadores y Equipo
-                </h1>
-                <p className="text-sm md:text-lg text-justify">
-                  Cada equipo constará de 3 jugadores a discresion de las
-                  siguientes combinaciones: femenino, mixto o masculino.
-                </p>
-                <p className="text-sm md:text-lg text-justify">
-                  Son permitidos tacos junto con protector bucal, scrumcap,
-                  shoulder pads. No será necesario uniforme del mismo color o
-                  medias largas.
-                </p>
+                    <h1 className="mt-5 mb-2 p-0 m-0 text-three  text-xl text-left">
+                      Puntos
+                    </h1>
+                    <p className="text-sm md:text-lg text-justify">
+                      Los puntos pueden ser acumulados de una de las siguientes
+                      forma:
+                      <ul className="list-disc">
+                        <li>
+                          Al evitar el avance del atacante y llevarlo al suelo.
+                        </li>
+                        <li>Al apoyar el balón en la zona de anotación.</li>
+                        <li>
+                          Al momento que el portador del balón pierde la
+                          posesión.
+                        </li>
+                      </ul>
+                    </p>
 
-                <h1 className="mt-5 mb-2 p-0 m-0 text-three  text-xl text-left">
-                  Puntos
-                </h1>
-                <p className="text-sm md:text-lg text-justify">
-                  Los puntos pueden ser acumulados de una de las siguientes
-                  forma:
-                  <ul className="list-disc">
-                    <li>
-                      Al evitar el avanze del atacante y llevarlo al suelo.
-                    </li>
-                    <li>Al llevar el balón al area de anotación.</li>
-                    <li>
-                      Al momento que el portador del balón pierde la posesión.
-                    </li>
-                  </ul>
-                </p>
-
-                <h1 className="mt-5 mb-2 p-0 m-0 text-three text-xl text-left">
-                  Ganando el juego
-                </h1>
-                <p className="text-sm md:text-lg text-justify">
-                  Para ganar el juego deberas tener la más puntos que tu
-                  oponente al finalizar todas las rodas. Los putos pueden ser
-                  anotado de cualquiera de las formas mencionadas en el punto
-                  anterior.
-                </p>
-              </div>
-              <div className="ml-0 md:ml-4">
-                <h1 className="mt-5 mb-2 p-0 m-0 text-three text-xl text-left">
-                  Reglas
-                </h1>
-                <p className="text-sm md:text-lg text-justify">
-                  <ul className="list-disc">
-                    <li>
-                      Para iniciar el juego se hará el clasico sorteo, el equipo
-                      perdedor puede elegir su ugador peimero; esto le da
-                      ventaja al ganador.
-                    </li>
-                    <li>
-                      El juego está dividido en 4 rondas + 1 adicional en caso
-                      de empate.
-                    </li>
-                    <li>
-                      El campo consite de las siguientes marcos: linea de medio,
-                      zona de marca (1m), zona de defenza (2m), zona de
-                      anotación (~1m), lineas de bola muerta. El juego se
-                      reinicia luego de cada ronda.
-                    </li>
-                    <li>
-                      Cada equipo inicia con un jugador. Este puede ser cambiado
-                      solo en dos ocaciones en el juego.
-                    </li>
-                    <li>
-                      El juego deberá contar con un refeere, que iniciará cada
-                      ronda del juego.
-                    </li>
-                    <li>
-                      El defenzor podrá tacklear al jugador sujetandolo y
-                      llevandolo al suelo. Un tackle no debe ser hecho sobre los
-                      hombros; esto puede ser causante de tarjetas y perder la
-                      ronda.
-                    </li>
-                    <li>
-                      El atacante debe mantener la posesión del en todo momento,
-                      Perder el balón, ser tackleado, salir de la cancha
-                      significa perder la ronda. No tendremos patadas, lineout,
-                      scrum, ruck o penales.
-                    </li>
-                    <li>
-                      Las tarjetas tendra un costo de $25 por rojas y $15 por
-                      amarillas.
-                    </li>
-                  </ul>
-                </p>
+                    <h1 className="mt-5 mb-2 p-0 m-0 text-three text-xl text-left">
+                      Ganando el juego
+                    </h1>
+                    <p className="text-sm md:text-lg text-justify">
+                      Para ganar el juego deberás tener más puntos que tu
+                      oponente al finalizar todas las rondas. Los puntos pueden
+                      ser anotados de cualquiera de las formas mencionadas en el
+                      punto anterior.
+                    </p>
+                  </div>
+                  <div className="ml-0 md:ml-4">
+                    <h1 className="mt-5 mb-2 p-0 m-0 text-three text-xl text-left">
+                      Reglas
+                    </h1>
+                    <p className="text-sm md:text-lg text-justify">
+                      <ul className="list-disc">
+                        <li>
+                          Para iniciar el juego se hará el clásico sorteo, el
+                          equipo perdedor deberá elegir su jugador primero; esto
+                          le dará ventaja al ganador.
+                        </li>
+                        <li>
+                          El juego está dividido en 4 rondas + 1 adicional en
+                          caso de empate.
+                        </li>
+                        <li>
+                          El campo consite de los siguientes marcos: línea de
+                          medio, zona de marca (1m), zona de defensa (2m), zona
+                          de anotación (~1m), lineas de bola muerta. El juego se
+                          reinicia luego de cada ronda.
+                        </li>
+                        <li>
+                          Cada equipo inicia con un jugador. Este puede ser
+                          sustituido solo en dos ocaciones por juego.
+                        </li>
+                        <li>
+                          El juego deberá contar con un referee, que iniciará
+                          cada ronda del juego.
+                        </li>
+                        <li>
+                          El defensor podrá tacklear al jugador sujetandolo y
+                          llevandolo al suelo. Un tackle no puede ser hecho
+                          sobre los hombros; esto puede ser causante de tarjetas
+                          y perder la ronda.
+                        </li>
+                        <li>
+                          El atacante debe mantener la posesión del balón en
+                          todo momento, Perder el balón, ser tackleado, salir de
+                          la cancha significará perder la ronda. No tendrémos
+                          patadas, lineouts, scrums, rucks o penales.
+                        </li>
+                        <li>
+                          Las tarjetas tendrán un costo de $25 por rojas y $15
+                          por amarillas, las cuales deberán ser canceladas antes
+                          del proximo partido.
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </Parallax>
+        </section>
 
         <footer className="bg-main">
           <div className="max-w-2xl mx-auto text-white py-10">
             <div className="text-center">
-              <h3 className="text-3xl mb-3"> Download our fitness app </h3>
-              <p> Stay fit. All day, every day. </p>
               <div className="flex justify-center my-10">
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
-                    className="w-7 md:w-8"
-                  />
-                  <div className="text-left ml-3">
-                    <p className="text-xs text-gray-200">Download on </p>
-                    <p className="text-sm md:text-base"> Google Play Store </p>
-                  </div>
-                </div>
-                <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
-                    className="w-7 md:w-8"
-                  />
-                  <div className="text-left ml-3">
-                    <p className="text-xs text-gray-200">Download on </p>
-                    <p className="text-sm md:text-base"> Apple Store </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-              <p className="order-2 md:order-1 mt-8 md:mt-0">
-                {" "}
-                &copy; Rugby PTY, 2023.{" "}
-              </p>
-              <div className="order-1 md:order-2">
-                <span className="px-2">About us</span>
-                <span className="px-2 border-l">Contact us</span>
-                <span className="px-2 border-l">Privacy Policy</span>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <footer className="relative z-10 bg-white dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20">
-          <div className="container mx-auto">
-            <div className="flex flex-wrap -mx-4">
-              <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-                <div className="w-full mb-10">
+              <div className="w-full mb-10">
                   <a
                     href="javascript:void(0)"
                     className="mb-6 inline-block max-w-[160px]"
                   >
                     <img
-                      src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+                      src="/imagotipo.svg"
                       alt="logo"
-                      className="max-w-full dark:hidden"
-                    />
-                    <img
-                      src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
-                      alt="logo"
-                      className="max-w-full hidden dark:block"
+                      className="max-w-full h-32"
                     />
                   </a>
                   <p className="text-base text-body-color dark:text-dark-6 mb-7">
                     Sed ut perspiciatis undmnis is iste natus error sit amet
                     voluptatem totam rem aperiam.
                   </p>
-                  <p className="flex items-center text-sm font-medium text-dark dark:text-white">
-                    <span className="mr-3 text-primary">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_941_15626)">
-                          <path
-                            d="M15.1875 19.4688C14.3438 19.4688 13.375 19.25 12.3125 18.8438C10.1875 18 7.84377 16.375 5.75002 14.2813C3.65627 12.1875 2.03127 9.84377 1.18752 7.68752C0.250019 5.37502 0.343769 3.46877 1.43752 2.40627C1.46877 2.37502 1.53127 2.34377 1.56252 2.31252L4.18752 0.750025C4.84377 0.375025 5.68752 0.562525 6.12502 1.18752L7.96877 3.93753C8.40627 4.59378 8.21877 5.46877 7.59377 5.90627L6.46877 6.68752C7.28127 8.00002 9.59377 11.2188 13.2813 13.5313L13.9688 12.5313C14.5 11.7813 15.3438 11.5625 16.0313 12.0313L18.7813 13.875C19.4063 14.3125 19.5938 15.1563 19.2188 15.8125L17.6563 18.4375C17.625 18.5 17.5938 18.5313 17.5625 18.5625C17 19.1563 16.1875 19.4688 15.1875 19.4688ZM2.37502 3.46878C1.78127 4.12503 1.81252 5.46877 2.50002 7.18752C3.28127 9.15627 4.78127 11.3125 6.75002 13.2813C8.68752 15.2188 10.875 16.7188 12.8125 17.5C14.5 18.1875 15.8438 18.2188 16.5313 17.625L18.0313 15.0625C18.0313 15.0313 18.0313 15.0313 18.0313 15L15.2813 13.1563C15.2813 13.1563 15.2188 13.1875 15.1563 13.2813L14.4688 14.2813C14.0313 14.9063 13.1875 15.0938 12.5625 14.6875C8.62502 12.25 6.18752 8.84377 5.31252 7.46877C4.90627 6.81252 5.06252 5.96878 5.68752 5.53128L6.81252 4.75002V4.71878L4.96877 1.96877C4.96877 1.93752 4.93752 1.93752 4.90627 1.96877L2.37502 3.46878Z"
-                            fill="currentColor"
-                          />
-                          <path
-                            d="M18.3125 8.90633C17.9375 8.90633 17.6563 8.62508 17.625 8.25008C17.375 5.09383 14.7813 2.56258 11.5938 2.34383C11.2188 2.31258 10.9063 2.00008 10.9375 1.59383C10.9688 1.21883 11.2813 0.906333 11.6875 0.937583C15.5625 1.18758 18.7188 4.25008 19.0313 8.12508C19.0625 8.50008 18.7813 8.84383 18.375 8.87508C18.375 8.90633 18.3438 8.90633 18.3125 8.90633Z"
-                            fill="currentColor"
-                          />
-                          <path
-                            d="M15.2187 9.18755C14.875 9.18755 14.5625 8.93755 14.5312 8.56255C14.3437 6.87505 13.0312 5.56255 11.3437 5.3438C10.9687 5.31255 10.6875 4.93755 10.7187 4.56255C10.75 4.18755 11.125 3.9063 11.5 3.93755C13.8437 4.2188 15.6562 6.0313 15.9375 8.37505C15.9687 8.75005 15.7187 9.0938 15.3125 9.1563C15.25 9.18755 15.2187 9.18755 15.2187 9.18755Z"
-                            fill="currentColor"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_941_15626">
-                            <rect width="20" height="20" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                    <span>+012 (345) 678 99</span>
-                  </p>
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-                <div className="w-full mb-10">
-                  <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
-                    Resources
-                  </h4>
-                  <ul className="space-y-3">
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        SaaS Development
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Our Products
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        User Flow
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        User Strategy
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-                <div className="w-full mb-10">
-                  <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
-                    Company
-                  </h4>
-                  <ul className="space-y-3">
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        About TailGrids
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Contact & Support
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Success History
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Setting & Privacy
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-                <div className="w-full mb-10">
-                  <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
-                    Quick Links
-                  </h4>
-                  <ul className="space-y-3">
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Premium Support
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Our Services
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Know Our Team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="javascript:void(0)"
-                        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                      >
-                        Download App
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
-                <div className="w-full mb-10">
-                  <h4 className="text-lg font-semibold text-dark dark:text-white mb-9">
-                    Follow Us On
-                  </h4>
                   <div className="flex items-center mb-6">
                     <a
                       href="javascript:void(0)"
@@ -598,41 +405,20 @@ function App() {
                       </svg>
                     </a>
                   </div>
-                  <p className="text-base text-body-color dark:text-dark-6">
-                    &copy; 2025 TailGrids
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div>
-            <span className="absolute left-0 bottom-0 z-[-1]">
-              <svg
-                width="217"
-                height="229"
-                viewBox="0 0 217 229"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M-64 140.5C-64 62.904 -1.096 1.90666e-05 76.5 1.22829e-05C154.096 5.49924e-06 217 62.904 217 140.5C217 218.096 154.096 281 76.5 281C-1.09598 281 -64 218.096 -64 140.5Z"
-                  fill="url(#paint0_linear_1179_5)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_1179_5"
-                    x1="76.5"
-                    y1="281"
-                    x2="76.5"
-                    y2="1.22829e-05"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#3056D3" stop-opacity="0.08" />
-                    <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
+            <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+              <p className="order-2 md:order-1 mt-8 md:mt-0">
+                {" "}
+                &copy; Rugby PTY, 2023.{" "}
+              </p>
+              <div className="order-1 md:order-2">
+                <span className="px-2">About us</span>
+                <span className="px-2 border-l">Contact us</span>
+                <span className="px-2 border-l">Privacy Policy</span>
+              </div>
+            </div>
           </div>
         </footer>
       </main>
