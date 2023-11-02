@@ -7,6 +7,7 @@ interface Props {
   image?: string;
   extra?: ReactNode;
   children: ReactNode;
+  id?: string;
 }
 
 export const Parallax = ({
@@ -15,9 +16,10 @@ export const Parallax = ({
   image,
   color,
   extra,
+  id = "section-id",
 }: Props) => {
   return (
-    <section className="relative">
+    <section id={id} className="relative">
       <div
         className={clsx(
           className,
@@ -40,9 +42,11 @@ export const WithBackground = ({
   image,
   color,
   className,
+  id = "section-id",
 }: Props) => {
   return (
     <section
+      id={id}
       className={clsx(
         "relative w-full pt-16 pb-8 ",
         className,
