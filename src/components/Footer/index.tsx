@@ -7,7 +7,7 @@ import { MENU_ENTRIES } from "../../configs/menu";
 function Footer() {
   return (
     <footer className="bg-main">
-      <div className="max-w-2xl mx-auto text-white py-10">
+      <div className="max-w-2xl mx-auto text-white py-10 px-4">
         <div className="text-center">
           <div className="flex justify-center my-10">
             <div>
@@ -116,6 +116,7 @@ function Footer() {
           <div className="order-1 md:order-2">
             {MENU_ENTRIES.map(({ label, scroll }, index) => (
                 <a
+                key={label}
                 onClick={() => goToElement(scroll)}
                 className={clsx("px-2 inline-block lg:hover:text-three text-white", { "border-l": index > 0 })}
               >

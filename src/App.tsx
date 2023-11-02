@@ -122,7 +122,7 @@ function App() {
               </div>
             </div>
           </div>
-          <button className="md:block absolute bg-three py-2 px-4 text-white rounded-full text-xl -mt-5 left-1/2">
+          <button className="sr-only md:block absolute bg-three py-2 px-4 text-white rounded-full text-xl -mt-5 left-1/2">
             +
           </button>
         </section>
@@ -169,7 +169,7 @@ function App() {
           id="field"
           className={clsx(
             "relative w-full pt-16 pb-8 ",
-            "py-14 text-white",
+            "py-14 px-4 text-white",
             "bg-[url('/images/bg/field.jpg')] bg-center bg-cover before:bg-accent",
             "before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:opacity-90"
           )}
@@ -186,7 +186,7 @@ function App() {
                     className="w-full h-full md:object-contain "
                   />
                 </div>
-                <div className="max-md:order-1 max-md:text-center p-2">
+                <div className="max-md:order-1 max-md:text-center">
                   <p className="mt-4 text-sm md:text-lg text-justify">
                     En el corazón de un campo de{" "}
                     <span className="text-three">6x3 metros</span>, flanqueado
@@ -259,17 +259,16 @@ function App() {
                     <p className="text-sm md:text-lg text-justify">
                       Los puntos pueden ser acumulados de una de las siguientes
                       forma:
-                      <ul className="list-disc">
-                        <li>
-                          Al evitar el avance del atacante y llevarlo al suelo.
-                        </li>
-                        <li>Al apoyar el balón en la zona de anotación.</li>
-                        <li>
-                          Al momento que el portador del balón pierde la
-                          posesión.
-                        </li>
-                      </ul>
                     </p>
+                    <ul className="list-disc text-sm md:text-lg text-justify pl-4">
+                      <li>
+                        Al evitar el avance del atacante y llevarlo al suelo.
+                      </li>
+                      <li>Al apoyar el balón en la zona de anotación.</li>
+                      <li>
+                        Al momento que el portador del balón pierde la posesión.
+                      </li>
+                    </ul>
 
                     <h1 className="mt-5 mb-2 p-0 m-0 text-three text-xl text-left">
                       Ganando el juego
@@ -285,50 +284,48 @@ function App() {
                     <h1 className="mt-5 mb-2 p-0 m-0 text-three text-xl text-left">
                       Reglas
                     </h1>
-                    <p className="text-sm md:text-lg text-justify">
-                      <ul className="list-disc">
-                        <li>
-                          Para iniciar el juego se hará el clásico sorteo, el
-                          equipo perdedor deberá elegir su jugador primero; esto
-                          le dará ventaja al ganador.
-                        </li>
-                        <li>
-                          El juego está dividido en 4 rondas + 1 adicional en
-                          caso de empate.
-                        </li>
-                        <li>
-                          El campo consite de los siguientes marcos: línea de
-                          medio, zona de marca (1m), zona de defensa (2m), zona
-                          de anotación (~1m), lineas de bola muerta. El juego se
-                          reinicia luego de cada ronda.
-                        </li>
-                        <li>
-                          Cada equipo inicia con un jugador. Este puede ser
-                          sustituido solo en dos ocaciones por juego.
-                        </li>
-                        <li>
-                          El juego deberá contar con un referee, que iniciará
-                          cada ronda del juego.
-                        </li>
-                        <li>
-                          El defensor podrá tacklear al jugador sujetandolo y
-                          llevandolo al suelo. Un tackle no puede ser hecho
-                          sobre los hombros; esto puede ser causante de tarjetas
-                          y perder la ronda.
-                        </li>
-                        <li>
-                          El atacante debe mantener la posesión del balón en
-                          todo momento, Perder el balón, ser tackleado, salir de
-                          la cancha significará perder la ronda. No tendrémos
-                          patadas, lineouts, scrums, rucks o penales.
-                        </li>
-                        <li>
-                          Las tarjetas tendrán un costo de $25 por rojas y $15
-                          por amarillas, las cuales deberán ser canceladas antes
-                          del proximo partido.
-                        </li>
-                      </ul>
-                    </p>
+                    <ul className="list-disc text-sm md:text-lg text-justify pl-4">
+                      <li>
+                        Para iniciar el juego se hará el clásico sorteo, el
+                        equipo perdedor deberá elegir su jugador primero; esto
+                        le dará ventaja al ganador.
+                      </li>
+                      <li>
+                        El juego está dividido en 4 rondas + 1 adicional en caso
+                        de empate.
+                      </li>
+                      <li>
+                        El campo consite de los siguientes marcos: línea de
+                        medio, zona de marca (1m), zona de defensa (2m), zona de
+                        anotación (~1m), lineas de bola muerta. El juego se
+                        reinicia luego de cada ronda.
+                      </li>
+                      <li>
+                        Cada equipo inicia con un jugador. Este puede ser
+                        sustituido solo en dos ocaciones por juego.
+                      </li>
+                      <li>
+                        El juego deberá contar con un referee, que iniciará cada
+                        ronda del juego.
+                      </li>
+                      <li>
+                        El defensor podrá tacklear al jugador sujetandolo y
+                        llevandolo al suelo. Un tackle no puede ser hecho sobre
+                        los hombros; esto puede ser causante de tarjetas y
+                        perder la ronda.
+                      </li>
+                      <li>
+                        El atacante debe mantener la posesión del balón en todo
+                        momento, Perder el balón, ser tackleado, salir de la
+                        cancha significará perder la ronda. No tendrémos
+                        patadas, lineouts, scrums, rucks o penales.
+                      </li>
+                      <li>
+                        Las tarjetas tendrán un costo de $25 por rojas y $15 por
+                        amarillas, las cuales deberán ser canceladas antes del
+                        proximo partido.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

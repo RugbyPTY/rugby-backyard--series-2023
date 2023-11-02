@@ -4,6 +4,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import isologo from "../../assets/isologo.svg";
 import isotipo from "../../assets/isotipo.svg";
+import imagotipo from "../../assets/imagotipo.svg";
 
 import { goToElement } from "../../utils/scroll";
 
@@ -28,9 +29,9 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
-              src={isotipo}
-              className="mr-1 h-6 sm:h-9 invert"
-              alt="Rugby PTY isotipo"
+              src={imagotipo}
+              className="mr-1 h-56 sm:h-9 fill-black"
+              alt="Rugby PTY imagotipo"
             />
             {/* <Logo className="sm:h-[10rem] h-16 w-auto hover:drop-shadow-[0_0_1em_#61dafbaa] fill-titanes-500" /> */}
           </a>
