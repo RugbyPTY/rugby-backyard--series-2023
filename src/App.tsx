@@ -100,7 +100,7 @@ function App() {
                   <div className="lg:col-span-2 py-10 px-6 text-center">
                     <div className=" text-white font-bold flex justify-center">
                       <div>
-                        <h4>DICIEMBRE 2023</h4>
+                        <h4>ENERO 2024</h4>
                         <h1 className="p-0">
                           <div>BACKYARD</div>
                           <div>RUGBY</div>
@@ -129,7 +129,7 @@ function App() {
         <section className="bg-accent py-10">
           <div className="container mx-auto">
             <div className="flex justify-center">
-              <Countdown date="2023-12-16T00:00:00" />
+              <Countdown date="2024-01-27T15:00:00" />
             </div>
           </div>
         </section>
